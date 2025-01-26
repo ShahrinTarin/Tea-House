@@ -2,38 +2,70 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea House</title>
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <!-- font awesome cdn -->
-    <script src="https://kit.fontawesome.com/9156762a94.js" crossorigin="anonymous"></script>
-    <!-- tailwind cdn -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              },
-              fontFamily: {
-               manrope: ["Manrope", 'serif'],
-              },
-            },
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tea House</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- font awesome cdn -->
+  <script src="https://kit.fontawesome.com/9156762a94.js" crossorigin="anonymous"></script>
+  <!-- tailwind cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
           },
-        }
-      </script>
+          fontFamily: {
+            manrope: ["Manrope", 'serif'],
+          },
+        },
+      },
+    }
+  </script>
 </head>
 
 <body class="font-manrope">
+  <!-- banner section -->
+  <header>
+    <div
+      class="max-w-[1440px] px-4 md:px-8 md:py-12 py-8 mx-auto   grid grid-cols-1 gap-4 md:gap-6 items-center  md:grid-cols-2">
+      <div class="space-y-7 w-4/5 ">
+        <h1 class="text-5xl lg:text-7xl font-bold text-gray-900">It's good <br>
+          tea time at The <br> Tea House</h1>
+        <p class="text-gray-600 text-xs md:text-sm">Tea and Botanical Solutions Supplier Give Optimum <br>Satisfaction
+          To Your Taste Buds.</p>
+        <button
+          class="text-white font-bold px-4 py-2 bg-gradient-to-l from-[#FF0000] to-[#FF8938] rounded-lg flex gap-1 items-center">Explore
+          More<i class="fa-solid fa-arrow-right-long -rotate-45"></i></button>
+      </div>
+      <!-- image part -->
+      <div class="w-full relative">
+        <div>
+          <img src="./images/banner.png" alt="">
+        </div>
+        <!-- card ratings -->
+        <div
+          class="bg-white px-6 py-3 rounded-lg flex items-center gap-2 shadow-lg absolute lg:left-36 left-5 md:left-35 bottom-6 md:bottom-5">
+          <div>
+            <i class="fa-solid fa-star text-amber-400 text-4xl"></i>
+          </div>
+          <div>
+            <h1 class="font-bold text-2xl">5.00</h1>
+            <p class="text-gray-600 text-sm">Trust Pilot Ratings</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </header>
   <main>
-    <header>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim officiis amet dolor voluptatibus tenetur, placeat aliquid quod est, reiciendis natus blanditiis eligendi doloremque animi atque quis numquam accusantium. Aliquam, officiis.</p>
-    </header>
+
   </main>
 
 </body>
